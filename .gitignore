@@ -1,0 +1,72 @@
+# ===============================
+# SHX Project GitIgnore Template
+# ===============================
+
+# ───────────────────────────────────────────────────
+# Logs
+# ───────────────────────────────────────────────────
+shx.log                  # SHX runtime log
+*.log                    # General logs
+
+# ───────────────────────────────────────────────────
+# Configuration and secrets
+# ───────────────────────────────────────────────────
+*.cfg                    # Config files
+*.key                    # SSH/API keys, secrets
+
+# ───────────────────────────────────────────────────
+# User-specific & temp files
+# ───────────────────────────────────────────────────
+*.swp                    # Vim/NeoVim swap files
+*.swo
+*.swn
+*.bak                   # Backup files
+*.tmp                   # Temp files
+
+# ───────────────────────────────────────────────────
+# Python build & virtualenv
+# ───────────────────────────────────────────────────
+__pycache__/             # Python bytecode cache
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/              # Python package metadata
+build/                   # Build folder
+dist/                    # Distribution packages
+venv/                    # Python virtual environment
+*.venv/                  # Alternative virtualenv names
+
+# ───────────────────────────────────────────────────
+# Jupyter Notebooks
+# ───────────────────────────────────────────────────
+.ipynb_checkpoints/      # Notebook autosaves
+
+# ───────────────────────────────────────────────────
+# IDEs and editors
+# ───────────────────────────────────────────────────
+.vscode/                 # VSCode settings
+.idea/                   # JetBrains IDEs
+*.iml                    # IntelliJ project files
+
+# ───────────────────────────────────────────────────
+# Node.js
+# ───────────────────────────────────────────────────
+node_modules/            # Node dependencies
+
+# ───────────────────────────────────────────────────
+# Operating System files
+# ───────────────────────────────────────────────────
+.DS_Store                # macOS directory metadata
+Thumbs.db                # Windows thumbnail cache
+
+# ───────────────────────────────────────────────────
+# SHX Shell & Runtime Files
+# ───────────────────────────────────────────────────
+.shx/                    # SHX config/state (avoid pushing this)
+shx-setup.sh             # Optional: ignore if sensitive
+shx.sh                   # Optional: ignore if runtime-specific
+
+# ===============================
+# End of GitIgnore
+# ===============================
+
